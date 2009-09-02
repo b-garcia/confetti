@@ -1,0 +1,21 @@
+noremap h H
+noremap s L
+noremap t j
+noremap n k
+
+noremap T 10j
+noremap N 10k
+
+noremap <C-o> O
+noremap O :tabopen 
+
+noremap . gT
+noremap p gt
+
+noremap > :tabmove! -1<Enter>
+noremap P :tabmove! +1<Enter>
+
+noremap l n
+noremap L N
+
+au LocationChange .* js modes.passAllKeys = /www.whirled.com\/#/.test(buffer.URL)
